@@ -5,13 +5,12 @@ A simple, fully cloud-based data engineering project that extracts weather data 
 - Google Colab (no local setup)
 - Python (pandas, requests, sqlalchemy)
 - WeatherAPI (for real-time weather data)
-- ElephantSQL (PostgreSQL DB in the cloud)
 - GitHub (version control)
 
 ## How It Works
 1. **Extract**: Calls WeatherAPI to get current weather data for any city.
 2. **Transform**: Cleans and flattens the JSON response using `pandas`.
-3. **Load**: Inserts the cleaned data into a PostgreSQL database (ElephantSQL).
+3. **Load**: Inserts the cleaned data into SQLite.
 4. **Export**: Saves the data as a CSV in the Colab environment.
 
 ## Project Structure
