@@ -13,3 +13,9 @@ A simple, fully cloud-based data engineering project that extracts weather data 
 2. **Transform**: Cleans and flattens the JSON response using `pandas`.
 3. **Load**: Inserts the cleaned data into a PostgreSQL database (ElephantSQL).
 4. **Export**: Saves the data as a CSV in the Colab environment.
+
+## Project Structure
+├── weather_etl.ipynb # Google Colab Notebook
+├── requirements.txt # Python dependencies
+├── sample_weather_output.csv # Output sample
+└── README.md # Project documentation
