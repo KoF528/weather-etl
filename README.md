@@ -1,20 +1,26 @@
 # cloud based Weather ETL Pipeline
 A simple, fully cloud-based data engineering project that extracts weather data from a public API, transforms it using Python, and loads it into a cloud-hosted PostgreSQL database — all from Google Colab. It also exports the data to CSV for easy reporting.
 
-## Tech Stack
-- Google Colab (no local setup)
-- Python (pandas, requests, sqlalchemy)
-- WeatherAPI (for real-time weather data)
-- GitHub (version control)
+## Project Features
+- Extracts real-time weather data using the WeatherAPI
+- Transforms JSON data into a clean tabular format using `pandas`
+- Loads the data into a local **SQLite** database
+- Exports results to `weather_data.csv`
+- All code written and tested in **Google Colab**
+---
+## Technologies Used
+- Python
+- Google Colab
+- pandas
+- requests
+- sqlite3
+- WeatherAPI
+---
+## Sample Output
+CSV files:
+- `weather_data.csv`: Final ETL output
 
-## How It Works
-1. **Extract**: Calls WeatherAPI to get current weather data for any city.
-2. **Transform**: Cleans and flattens the JSON response using `pandas`.
-3. **Load**: Inserts the cleaned data into SQLite.
-4. **Export**: Saves the data as a CSV in the Colab environment.
-
-## Project Structure
-├── weather_etl.ipynb # Google Colab Notebook
-├── requirements.txt # Python dependencies
-├── sample_weather_output.csv # Output sample
-└── README.md # Project documentation
+## Possible Extensions
+- Store data in PostgreSQL (e.g. Supabase or Neon)
+- Automate daily runs with GitHub Actions
+- Visualize trends using Streamlit or Looker Studio
